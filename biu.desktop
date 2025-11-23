@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Biu
+Comment=Bilibili音乐播放器
+Exec=biu %F
+Terminal=false
+Type=Application
+Icon=biu
+Categories=TextEditor;Utility;
+Keywords=biu;music;audio;video;
+StartupWMClass=biu
+Actions=NewWindow;
