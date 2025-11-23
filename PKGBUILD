@@ -15,7 +15,7 @@ source=("Biu-v${pkgver}.AppImage::https://github.com/wood3n/biu/releases/downloa
     "biu.sh"
 )
 sha256sums=('0bf8c6aea40557d96fd4c580b46f05ca2ab765fb400409872bfdac6fe51a564d'
-            'b51c7fa1a63b36ef4f86a9d492511d971392153e452a249cd57ed5de016c9215'
+            'ed65e7755796671c943a006a0b93fd6cbfb79942335ff28680900107e55755d3'
             '11f1f3940979e176b3caea08c3793ba1783ca4f55661ba6ba12aada7722593d0')
 
 build() {
@@ -26,16 +26,16 @@ build() {
 }
 
 package() {
-    install -d "$pkgdir/usr/lib/biu/app"
     install -d "$pkgdir/usr/bin"
-    install -d "$pkgdir/usr/share/icons"
+    install -d "$pkgdir/usr/share/icons/hicolor/512x512/apps"
     install -d "$pkgdir/usr/share/applications"
 
     install -m755 biu.sh "$pkgdir/usr/bin/biu"
     install -m644 biu.desktop "$pkgdir/usr/share/applications/biu.desktop"
 
     cd squashfs-root/resources
-    find ../usr/share/icons -type d -exec install -d "$pkgdir/usr/share/icons/{}" \;
     find . -type d -exec install -d "$pkgdir/usr/lib/biu/{}" \;
     find . -type f -exec install -m644 "{}" "$pkgdir/usr/lib/biu/{}" \;
+
+    install -m644 $srcdir/squashfs-root/usr/share/icons/hicolor/512x512/apps/Biu.png "$pkgdir/usr/share/icons/hicolor/512x512/apps/Biu.png"
 }

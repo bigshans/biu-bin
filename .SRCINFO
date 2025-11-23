@@ -10,7 +10,7 @@ pkgbase = biu-bin
 	source = biu.desktop
 	source = biu.sh
 	sha256sums = 0bf8c6aea40557d96fd4c580b46f05ca2ab765fb400409872bfdac6fe51a564d
-	sha256sums = b51c7fa1a63b36ef4f86a9d492511d971392153e452a249cd57ed5de016c9215
+	sha256sums = ed65e7755796671c943a006a0b93fd6cbfb79942335ff28680900107e55755d3
 	sha256sums = 11f1f3940979e176b3caea08c3793ba1783ca4f55661ba6ba12aada7722593d0
 
 pkgname = biu-bin
