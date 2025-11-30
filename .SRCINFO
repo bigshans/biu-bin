@@ -1,15 +1,15 @@
 pkgbase = biu-bin
 	pkgdesc = Bilibili音乐播放器
-	pkgver = 1.5.2
+	pkgver = 1.5.3
 	pkgrel = 1
 	url = https://github.com/wood3n/biu
 	arch = x86_64
 	license = AGPL-3.0
 	depends = electron
-	source = Biu-v1.5.2.AppImage::https://github.com/wood3n/biu/releases/download/v1.5.2/Biu-1.5.1-linux-x86_64.AppImage
+	source = Biu-v1.5.3.AppImage::https://github.com/wood3n/biu/releases/download/v1.5.3-beta.1/Biu-1.5.3-beta.1-linux-x86_64.AppImage
 	source = biu.desktop
 	source = biu.sh
-	sha256sums = 0bf8c6aea40557d96fd4c580b46f05ca2ab765fb400409872bfdac6fe51a564d
+	sha256sums = 86422bbb7f57a9bd98fb495a3a032d1413be1bb1eec9e2085abf4760213e496d
 	sha256sums = ed65e7755796671c943a006a0b93fd6cbfb79942335ff28680900107e55755d3
 	sha256sums = 11f1f3940979e176b3caea08c3793ba1783ca4f55661ba6ba12aada7722593d0
 
