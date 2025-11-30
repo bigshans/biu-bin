@@ -9,7 +9,7 @@ pkgdesc="Bilibili音乐播放器"
 arch=("x86_64")
 url="https://github.com/wood3n/biu"
 license=("AGPL-3.0")
-depends=("$_electron_exec")
+depends=("$_electron_exec" bubblewrap)
 source=("Biu-v${pkgver}.AppImage::https://github.com/wood3n/biu/releases/download/v${pkgver}-beta.1/Biu-${_pkgver}-beta.1-linux-x86_64.AppImage"
     "biu.desktop"
     "biu.sh"
@@ -17,11 +17,11 @@ source=("Biu-v${pkgver}.AppImage::https://github.com/wood3n/biu/releases/downloa
 
 sha256sums=('23d411460bfb5d78f5d0dc1d160b604004b93de543dc8f50e2fc09c4d53e7e40'
             'ed65e7755796671c943a006a0b93fd6cbfb79942335ff28680900107e55755d3'
-            '11f1f3940979e176b3caea08c3793ba1783ca4f55661ba6ba12aada7722593d0')
+            'c19467e3f6f4c44cd81f806f5c2f83408f32f03a78bd956eb4c9b32ebda3d9a1')
 
 build() {
     sed -i 's#__ROOT_DIR__#/usr/lib/biu#g' biu.sh
-    sed -i "s#__ELECTRON__#/usr/bin/$_electron_exec#g" biu.sh
+    sed -i "s#__ELECTRON__#$_electron_exec#g" biu.sh
     chmod +x ./Biu-v${pkgver}.AppImage
     ./Biu-v${pkgver}.AppImage --appimage-extract
 }

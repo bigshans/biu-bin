@@ -6,11 +6,12 @@ pkgbase = biu-bin
 	arch = x86_64
 	license = AGPL-3.0
 	depends = electron
+	depends = bubblewrap
 	source = Biu-v1.6.0.AppImage::https://github.com/wood3n/biu/releases/download/v1.6.0-beta.1/Biu-1.6.0-beta.1-linux-x86_64.AppImage
 	source = biu.desktop
 	source = biu.sh
 	sha256sums = 23d411460bfb5d78f5d0dc1d160b604004b93de543dc8f50e2fc09c4d53e7e40
 	sha256sums = ed65e7755796671c943a006a0b93fd6cbfb79942335ff28680900107e55755d3
-	sha256sums = 11f1f3940979e176b3caea08c3793ba1783ca4f55661ba6ba12aada7722593d0
+	sha256sums = c19467e3f6f4c44cd81f806f5c2f83408f32f03a78bd956eb4c9b32ebda3d9a1
 
 pkgname = biu-bin
