@@ -1,8 +1,8 @@
 # Maintainer: Areian
 
 pkgname=biu-bin
-pkgver=1.5.3
-_pkgver=1.5.3
+pkgver=1.6.0
+_pkgver=1.6.0
 _electron_exec=electron
 pkgrel=1
 pkgdesc="Bilibili音乐播放器"
@@ -14,7 +14,8 @@ source=("Biu-v${pkgver}.AppImage::https://github.com/wood3n/biu/releases/downloa
     "biu.desktop"
     "biu.sh"
 )
-sha256sums=('86422bbb7f57a9bd98fb495a3a032d1413be1bb1eec9e2085abf4760213e496d'
+
+sha256sums=('23d411460bfb5d78f5d0dc1d160b604004b93de543dc8f50e2fc09c4d53e7e40'
             'ed65e7755796671c943a006a0b93fd6cbfb79942335ff28680900107e55755d3'
             '11f1f3940979e176b3caea08c3793ba1783ca4f55661ba6ba12aada7722593d0')
 
