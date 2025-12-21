@@ -4,18 +4,18 @@ pkgname=biu-bin
 pkgver=1.6.0
 _pkgver=1.6.0
 _electron_exec=electron
-pkgrel=1
+pkgrel=5
 pkgdesc="Bilibili音乐播放器"
 arch=("x86_64")
 url="https://github.com/wood3n/biu"
 license=("AGPL-3.0")
 depends=("$_electron_exec" bubblewrap)
-source=("Biu-v${pkgver}.AppImage::https://github.com/wood3n/biu/releases/download/v${pkgver}-beta.1/Biu-${_pkgver}-beta.1-linux-x86_64.AppImage"
+source=("Biu-v${pkgver}.AppImage::https://github.com/wood3n/biu/releases/download/v${pkgver}-beta.${pkgrel}/Biu-${_pkgver}-beta.${pkgrel}-linux-x86_64.AppImage"
     "biu.desktop"
     "biu.sh"
 )
 
-sha256sums=('23d411460bfb5d78f5d0dc1d160b604004b93de543dc8f50e2fc09c4d53e7e40'
+sha256sums=('9c933bf7a49406bc2c81cce46a3e89cb1d32e19c46775d2efbf983f047bcb32f'
             'ed65e7755796671c943a006a0b93fd6cbfb79942335ff28680900107e55755d3'
             'c19467e3f6f4c44cd81f806f5c2f83408f32f03a78bd956eb4c9b32ebda3d9a1')
 
